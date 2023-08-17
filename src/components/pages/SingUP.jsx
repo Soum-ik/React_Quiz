@@ -1,9 +1,9 @@
-import Illustration from "./illustration";
-import classes from "../styles/singUP.module.css";
-import Form from "./form";
-import TextInput from "./textInput";
-import CheckBox from "./checkbox";
-import Button from "./Button";
+import Button from "../Button";
+import CheckBox from "../checkbox";
+import Form from "../form";
+import Illustration from "../illustration";
+import classes from "../../styles/singUP.module.css";
+import TextInput from "../textInput";
 
 export default function SignUP() {
   return (
@@ -25,7 +25,7 @@ export default function SignUP() {
             icon="lock_clock"
           />
           <CheckBox text="I agree to the Terms & Conditions" />
-          <Button>Submit Now</Button>
+          <Button><span>Submit Now</span></Button>
           <div className="info">
             Don't have an account? <a href="signup.html">Signup</a> instead.
           </div>

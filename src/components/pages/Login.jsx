@@ -1,8 +1,8 @@
-import Illustration from "./illustration";
-import Form from "./form";
-import TextInput from "./textInput";
-import Button from "./Button";
-import classes from "../styles/login.module.css";
+import classes from "../../styles/login.module.css";
+import Button from "../Button";
+import Form from "../form";
+import Illustration from "../illustration";
+import TextInput from "../textInput";
 
 export default function Login() {
   return (
@@ -17,7 +17,9 @@ export default function Login() {
             icon="alternate_email"
           />
           <TextInput type="password" placeholder="Enter password" icon="lock" />
-          <Button>Submit Now!</Button>
+          <Button>
+            <span>Submit Now</span>
+          </Button>
           <div className="info">
             Don't have an account? <a href="signup.html">Signup</a> instead.
           </div>

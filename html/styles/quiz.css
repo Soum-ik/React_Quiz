@@ -248,7 +248,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  user-select: none;
+  user-select: none;  
 }
 
 .floatingBtn:hover {
