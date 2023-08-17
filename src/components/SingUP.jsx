@@ -10,7 +10,7 @@ export default function SignUP() {
     <>
       <h1>Create an account</h1>
       <div className="column">
-        <Illustration />
+        <Illustration text="signUP" />
         <Form className={`${classes.SignUP}`}>
           <TextInput type="text" placeholder="Enter name" icon="person" />
           <TextInput
@@ -26,6 +26,9 @@ export default function SignUP() {
           />
           <CheckBox text="I agree to the Terms & Conditions" />
           <Button>Submit Now</Button>
+          <div className="info">
+            Don't have an account? <a href="signup.html">Signup</a> instead.
+          </div>
         </Form>
       </div>
     </>

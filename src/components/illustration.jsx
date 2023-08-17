@@ -1,12 +1,12 @@
 import classes from "../styles/Illstration.module.css";
-import signUpImmage from "../assets/images/signup.svg";
-
-export default function Illustration() {
+import signUpImage from "../assets/images/signup.svg";
+// import loginImage from "../assets/images/login.svg";
+export default function Illustration({ text }) {
   return (
-    <div>
+    <>
       <div className={classes.illustration}>
-        <img src={signUpImmage} alt="Signup" />
+        <img src={signUpImage} alt={text} />
       </div>
-    </div>
+    </>
   );
 }
