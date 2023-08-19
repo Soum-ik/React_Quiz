@@ -4,6 +4,7 @@ import Form from "../form";
 import Illustration from "../illustration";
 import classes from "../../styles/singUP.module.css";
 import TextInput from "../textInput";
+import { Link } from "react-router-dom";
 
 export default function SignUP() {
   return (
@@ -26,9 +27,9 @@ export default function SignUP() {
           />
           <CheckBox text="I agree to the Terms & Conditions" />
           <Button><span>Submit Now</span></Button>
-          <div className="info">
-            Don't have an account? <a href="signup.html">Signup</a> instead.
-          </div>
+          <div class="info">
+              Already have an account? <Link to="/login_page">Login</Link> instead.
+            </div>
         </Form>
       </div>
     </>

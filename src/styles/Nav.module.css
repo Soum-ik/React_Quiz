@@ -49,3 +49,8 @@
     display: none;
   }
 }
+
+.active {
+  font-size: 20px;
+  color: rgb(82, 78, 78);
+}
