@@ -22,11 +22,11 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     const auth = getAuth();
 
-    const unser = onAuthStateChanged(auth, (user) => {
+    const unsebcriuse = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
       setLoading(false);
     });
-    return unser;
+    return unsebcriuse;
   }, []);
 
   //   signUP funcation
@@ -39,6 +39,7 @@ export function AuthProvider({ children }) {
     });
 
     const user = auth.currentUser;
+    console.log(user);
     setCurrentUser({
       ...user,
     });

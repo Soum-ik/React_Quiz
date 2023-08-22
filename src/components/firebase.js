@@ -1,13 +1,13 @@
 import { initializeApp } from "firebase/app";
 
 const app = initializeApp({
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_API_AUTH_DOMIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
+  apiKey: "AIzaSyCmyD6LkC4I3NaPY6E7gJOsX4h0zmigtyc",
+  authDomain: "developer-9o9.firebaseapp.com",
+  projectId: "developer-9o9",
+  storageBucket: "developer-9o9.appspot.com",
+  messagingSenderId: "563748231896",
+  appId: "1:563748231896:web:2ab6fb59704daae9e0d5ad",
+  measurementId: "G-1DM9XXLYEP",
 });
 
 export default app;

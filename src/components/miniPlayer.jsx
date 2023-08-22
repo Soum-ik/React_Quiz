@@ -1,5 +1,5 @@
-import classes from "../styles/miniplayer.module.css";
 import miniPlayerImage from "../assets/images/3.jpg";
+import classes from "../styles/miniplayer.module.css";
 export default function MiniPlayer() {
   return (
     <div className={`${classes.miniPlayer} ${classes.floatingBtn}`}>
@@ -7,7 +7,10 @@ export default function MiniPlayer() {
         {" "}
         play_circle_filled{" "}
       </span>
-      <span className={`material-icons-outlined ${classes.close}`}> close </span>
+      <span className={`material-icons-outlined ${classes.close}`}>
+        {" "}
+        close{" "}
+      </span>
       <img src={miniPlayerImage} alt="miniPlayerImage" />
       <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
     </div>
