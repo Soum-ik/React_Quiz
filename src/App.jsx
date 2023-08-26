@@ -21,7 +21,7 @@ export default function App() {
             <Route path="login_page" element={<Login />} />
           </Route>
           <Route path="/*" element={<PrivateRouter />}>
-            <Route path="Quiz_page" element={<Quiz />} />
+            <Route path="Quiz_page/:id" element={<Quiz />} />
             <Route path="result_page" element={<Result />} />
           </Route>
         </Routes>
