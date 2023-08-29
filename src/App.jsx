@@ -1,14 +1,14 @@
-import "./styles/app.css";
-import { AuthProvider } from "../src/components/context/Auth_contexts";
+import { Route, Routes } from "react-router-dom";
 import Layout from "../src/components/Layout";
+import { AuthProvider } from "../src/components/context/Auth_contexts";
 import Home from "./components/pages/Home";
-import SignUP from "./components/pages/SingUP";
-import Quiz from "./components/pages/quzi";
 import Login from "./components/pages/Login";
 import Result from "./components/pages/Result";
-import { Routes, Route } from "react-router-dom";
+import SignUP from "./components/pages/SingUP";
+import Quiz from "./components/pages/quzi";
 import PrivateRouter from "./components/priveteRouter";
 import PublicRouter from "./components/publiroute";
+import "./styles/app.css";
 
 export default function App() {
   return (
@@ -22,7 +22,7 @@ export default function App() {
           </Route>
           <Route path="/*" element={<PrivateRouter />}>
             <Route path="Quiz_page/:id" element={<Quiz />} />
-            <Route path="result_page" element={<Result />} />
+            <Route path="Result_page/:id" element={<Result />} />
           </Route>
         </Routes>
       </Layout>
