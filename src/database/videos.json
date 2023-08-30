@@ -561,10 +561,10 @@
           "title": "What is the latest version of ECMAScript",
           "options": [
             {
-              "title": "ES2020"
+              "title": "ES13"
             },
             {
-              "title": "ES2021"
+              "title": "EX.Next"
             },
             {
               "title": "ES6"

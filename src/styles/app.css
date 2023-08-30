@@ -71,7 +71,7 @@ h4 {
 }
 
 /* videos component */
-.infinite-scroll-component  {
+.infinite-scroll-component {
   width: 100%;
   display: grid;
   margin: 3rem auto;
@@ -82,7 +82,13 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-  .infinite-scroll-component  {
+  .infinite-scroll-component {
     width: 90%;
   }
+}
+
+.auther {
+  font-size: 20px;
+  color: #002333;
+  margin: 10px;
 }

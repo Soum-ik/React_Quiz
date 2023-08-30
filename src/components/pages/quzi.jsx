@@ -70,7 +70,7 @@ export default function Quiz() {
 
   // calculate percentage of progress
   const percentage =
-    questions.length > 0 ? ((currentQuestion + 1) / questions.length) * 100 : 0; // percentage of progress
+    questions.length > 0 ? ((currentQuestion + 1) / questions.length) * 100 : 0;
 
   // submit quiz
   async function submit() {
@@ -94,6 +94,7 @@ export default function Quiz() {
           <h1>{qna[currentQuestion].title}</h1>
           <h4>Question can have multiple answers</h4>
           <Answers
+            input
             options={qna[currentQuestion].options}
             handleChange={handleAnswersChange}
           />

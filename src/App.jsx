@@ -9,6 +9,7 @@ import Quiz from "./components/pages/quzi";
 import PrivateRouter from "./components/priveteRouter";
 import PublicRouter from "./components/publiroute";
 import "./styles/app.css";
+import Auher from "./components/auther";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           </Route>
         </Routes>
       </Layout>
+      <Auher />
     </AuthProvider>
   );
 }
