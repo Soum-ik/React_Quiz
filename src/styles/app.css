@@ -88,6 +88,8 @@ h4 {
 }
 
 .auther {
+  position: relative;
+  /* bottom: 10px; */
   font-size: 20px;
   color: #002333;
   margin: 10px;

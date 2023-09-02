@@ -27,7 +27,7 @@ export default function App() {
           </Route>
         </Routes>
       </Layout>
-      <Auher />
+      {/* <Auher /> */}
     </AuthProvider>
   );
 }

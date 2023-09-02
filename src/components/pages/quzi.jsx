@@ -1,7 +1,7 @@
 import { getDatabase, ref, set } from "firebase/database";
 import _ from "lodash";
 import { useEffect, useReducer, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import useQuestionList from "../../database/hooks/useQuestion";
 import Answers from "../answers";
 import { useAuth } from "../context/Auth_contexts";
@@ -84,7 +84,11 @@ export default function Quiz() {
     navigate(`/Result_page/${id}`, { state: { qna } });
   }
 
-  // console.log(uid);
+  const location = useLocation();
+  const { state } = location;
+  const { videoTitle } = state;
+
+  console.log(videoTitle);
   return (
     <>
       {loading && <div>loading ...</div>}
@@ -104,7 +108,7 @@ export default function Quiz() {
             progress={percentage}
             submit={submit}
           />
-          <MiniPlayer />
+          <MiniPlayer id={id} title={videoTitle} />
         </>
       )}
     </>

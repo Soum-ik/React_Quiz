@@ -3,7 +3,7 @@ import classes from "../styles/answers.module.css";
 import { Fragment } from "react";
 
 export default function Answers({ options = [], handleChange, input }) {
-  console.log("answer page render", input);
+  // console.log("answer page render", input);
   return (
     <>
       <div className={classes.answers}>

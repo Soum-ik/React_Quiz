@@ -7,20 +7,23 @@ import Video from "./video";
 export default function Videos() {
   const [page, setPage] = useState(1);
   const { loading, error, videos, hasMore } = useVideoList(page);
-  // console.log(videos.length);
 
   return (
     <div>
       {videos.length > 0 && (
         <InfiniteScroll
           dataLength={videos.length}
+          loader={<h3>loading....</h3>}
           next={() => setPage(page + 4)}
           hasMore={hasMore}
-          loader={<h4>Loading...</h4>}
         >
           {videos.map((video, index) =>
             video.noq > 0 ? (
-              <Link to={`Quiz_page/${video.youtubeID}`} key={index}>
+              <Link
+                to={`Quiz_page/${video.youtubeID}`}
+                state={{ videoTitle: video.title }}
+                key={index}
+              >
                 <Video
                   title={video.title}
                   id={video.youtubeID}

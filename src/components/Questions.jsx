@@ -2,7 +2,7 @@ import Answer from "./answers";
 import classes from "../styles/Question.module.css";
 
 export default function Questions({ answers = [] }) {
-  console.log("Question page render");
+  // console.log("Question page render");
 
   return answers.map((answer, index) => (
     <div className={classes.question} key={index}>
