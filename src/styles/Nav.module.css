@@ -40,13 +40,18 @@
 }
 
 .nav .brand img {
-  width: 32px;
+  width: 70px;
+  color-scheme: black;
+  height: 100px;
   margin-right: 10px;
+  margin-top: 10px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 600px) {
   .nav .brand h3 {
     display: none;
+    transition: all ease .3s;
   }
 }
 
@@ -54,3 +59,10 @@
   font-size: 20px;
   color: rgb(82, 78, 78);
 }
+
+/* .logo_pn{
+
+  width: 300px;
+
+  object-fit: cover;
+} */
