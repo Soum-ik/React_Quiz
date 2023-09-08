@@ -5,7 +5,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import useQuestionList from "../../database/hooks/useQuestion";
 import Answers from "../answers";
 import { useAuth } from "../context/Auth_contexts";
-import MiniPlayer from "../Musicplayer";
+// import MiniPlayer from "../Musicplayer";
 import ProgressBar from "../progressber";
 
 const Initialstate = null;
@@ -108,7 +108,7 @@ export default function Quiz() {
             progress={percentage}
             submit={submit}
           />
-          <MiniPlayer id={id} title={videoTitle} />
+          {/* <MiniPlayer id={id} title={videoTitle} /> */}
         </>
       )}
     </>
