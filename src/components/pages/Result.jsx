@@ -13,7 +13,6 @@ export default function Result() {
 
   const { loading, error, answers } = useAnswer(id);
 
-  // calculte funcation
   function calculate() {
     let score = 0;
 

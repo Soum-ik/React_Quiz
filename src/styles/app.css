@@ -94,3 +94,7 @@ h4 {
   color: #002333;
   margin: 10px;
 }
+
+.image {
+  border-radius: 10px;
+}
