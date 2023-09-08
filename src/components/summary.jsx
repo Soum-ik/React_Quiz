@@ -16,9 +16,9 @@ function Summary({ score, noq }) {
     } else if ((score / (noq * 5)) * 100 < 75) {
       return "good";
     } else if ((score / (noq * 5)) * 100 < 100) {
-      return "thumbs-up";
+      return "Outstanding";
     } else {
-      return "excellent";
+      return "error";
     }
   }, [score, noq]);
   const url = `https://api.pexels.com/v1/search?query=${getKeyword}&per_page=1`;
