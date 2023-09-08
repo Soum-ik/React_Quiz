@@ -30,7 +30,7 @@ export default function MiniPlayer({ title, id }) {
         className={`material-icons-outlined ${classes.close}`}
         onClick={toggleMiniPlayer}
       >
-        {" "}
+        {/* {" "} */}
         close{" "}
       </span>
       <ReactPlayer
