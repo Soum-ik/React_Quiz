@@ -1,17 +1,17 @@
 import classes from "../styles/Video.module.css";
-import img from "../assets/images/3.jpg"
 
-export default function Video() {
+export default function Video({ title, noq, id }) {
   return (
-    <a href="quiz.html">
-      <div className={classes.video}>
-        <img src={img} alt="" />
-        <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
-        <div className={classes.qmeta}>
-          <p>10 Questions</p>
-          <p>Score : Not taken yet</p>
-        </div>
+    <div className={classes.video}>
+      <img
+        src={`http://img.youtube.com/vi/${id}/maxresdefault.jpg`}
+        alt={title}
+      />
+      <p>{title}</p>
+      <div className={classes.qmeta}>
+        <p>{noq} Questions</p>
+        <p>Total point: {noq * 5}</p>
       </div>
-    </a>
+    </div>
   );
 }
